@@ -1,10 +1,140 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-* {
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Game map  elements*/
+#gameMap{
+  width: auto; 
+  margin: 10px auto;
+  min-width: 510px;
+  min-height: 510px;
+  max-width: 510px;
+  max-height: 510px;
 }
 
-h1 {
-    width: 100%;
-    text-align: center;
+.boxesRow{
+  display: flex;
+  width: 100%;
+  width: auto; 
+  text-align: center;
+  margin: auto;
+}
+
+.player-panel {
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+#playerOne-panel {
+  background-color: #fe1754;
+}
+
+#playerTwo-panel {
+  background-color: #00a100;
+}
+
+.box{
+  width: 51px;
+  height: 51px; 
+  padding: 3px;
+  background-color: #BFCA3D;
+  border: solid .5px rgb(130, 141, 9);
+}
+
+.highlighted {
+  background-color: rgb(154, 167, 11);
+}
+
+.unavailable{
+  background-image: url("../img/block.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.mushroom{
+  background-image: url("../img/weapons/mushroom.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.sword{
+  background-image: url("../img/weapons/sword.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.bomb{
+  background-image: url("../img/weapons/bomb.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.lightning{
+  background-image: url("../img/weapons/linghtning.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.playerOne{
+  background-image: url("../img/player1.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.playerTwo{
+  background-image: url("../img/player2.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+
+/*Game panel*/
+#game-panel {
+  width: 100%;
+  text-align: center;
+}
+
+#playerOne-weapon, #playerTwo-weapon {
+  margin:auto;
+  background-color: #aaaaaa;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+
+#celebration-img {
+  margin: auto;
+  width: 60%;
+}
+
+#FightingModal .modal-content {
+  background-color: #199DD1;
+}
+
+#FightingModal .modal-body {
+  padding: 0;
+}
+
+#fight-img {
+  margin: auto;
+  width: 100%;
+}
+
+#fight-msg {
+  font-size: 5rem;
 }
