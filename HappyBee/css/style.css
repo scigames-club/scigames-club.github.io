@@ -35,6 +35,18 @@ body {
   background-color: #00a100;
 }
 
+.progress {
+  color: black!important;
+}
+
+#playerOne-score {
+  color: black!important;
+}
+
+#playerTwo-score {
+  color: black!important;
+}
+
 .box{
   width: 51px;
   height: 51px; 

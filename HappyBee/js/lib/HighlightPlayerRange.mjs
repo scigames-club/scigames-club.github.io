@@ -13,12 +13,14 @@ let changePosition = function(player, x,  y, nextPlayer){
   box = $('#box-'+player.x+player.y);
   box.addClass(player.name);
 
+  /*
   //if the player touches the next player, fight begin
   if( checkCombatBegin(player, nextPlayer) )
   {
     startFight(player, nextPlayer);
     return;
   }
+  */
 
   //highlight the next player possible moves
   HighlightPlayerRange(nextPlayer,player);
@@ -105,9 +107,14 @@ let getWeapon = function(player,x,y){
     {
       player.weapon = "lightning";
       player.damagePower = 50;
+      player.score += 50;
       $('#' + player.name +'-damagePower').html(player.damagePower);
       $('#' + player.name +'-weapon').removeClass();
       $('#' + player.name +'-weapon').addClass('lightning');
+      //if not a winner yet, display the scores
+      $('#' + player.name +'-score').html(player.score);
+      $('#' + player.name +'-visualScore').css("width", player.score + "%")
+      .attr("aria-valuenow", player.score);
       box.removeClass('weapon');
       box.removeClass('lightning');
     }
@@ -115,9 +122,14 @@ let getWeapon = function(player,x,y){
     {
       player.weapon = "bomb";
       player.damagePower = 40;
+      player.score += 40;
       $('#' + player.name +'-damagePower').html(player.damagePower);
       $('#' + player.name +'-weapon').removeClass();
       $('#' + player.name +'-weapon').addClass('bomb');
+      //if not a winner yet, display the scores
+      $('#' + player.name +'-score').html(player.score);
+      $('#' + player.name +'-visualScore').css("width", player.score + "%")
+      .attr("aria-valuenow", player.score);
       box.removeClass('weapon');
       box.removeClass('bomb');
     }
@@ -125,9 +137,14 @@ let getWeapon = function(player,x,y){
     {
       player.weapon = "sword";
       player.damagePower = 30;
+      player.score += 30;
       $('#' + player.name +'-damagePower').html(player.damagePower);
       $('#' + player.name +'-weapon').removeClass();
       $('#' + player.name +'-weapon').addClass('sword');
+      //if not a winner yet, display the scores
+      $('#' + player.name +'-score').html(player.score);
+      $('#' + player.name +'-visualScore').css("width", player.score + "%")
+      .attr("aria-valuenow", player.score);
       box.removeClass('weapon');
       box.removeClass('sword');
     }
@@ -135,9 +152,14 @@ let getWeapon = function(player,x,y){
     {
       player.weapon = "mushroom";
       player.damagePower = 20;
+      player.score += 20;
       $('#' + player.name +'-damagePower').html(player.damagePower);
       $('#' + player.name +'-weapon').removeClass();
       $('#' + player.name +'-weapon').addClass('mushroom');
+      //if not a winner yet, display the scores
+      $('#' + player.name +'-score').html(player.score);
+      $('#' + player.name +'-visualScore').css("width", player.score + "%")
+      .attr("aria-valuenow", player.score);
       box.removeClass('weapon');
       box.removeClass('mushroom');
     }

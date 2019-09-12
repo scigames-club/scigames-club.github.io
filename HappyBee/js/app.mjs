@@ -12,7 +12,8 @@ $(document).ready(function() {
     //make new instance of the Game object
     startGame = new Game();
   });
-
+  
+  /*
   // player 1 fighting panel *************************
   //button attack for player 1
   $( "#playerOne-attack" ).click(function() {
@@ -38,5 +39,5 @@ $(document).ready(function() {
     disableFight(startGame.playerTwo);
     enableFight(startGame.playerOne);
   });
-
+  */
 });

@@ -7,9 +7,9 @@ let Player = function(playerName, size) {
     this.x=0;
     this.y=0;
     this.name=playerName;
-    this.score = 100;
+    this.score = 0;
     this.weapon = "";
-    this.damagePower=10;
+    this.damagePower=0;
     this.fightingOption = "attack";
     this.turn=false;
 
