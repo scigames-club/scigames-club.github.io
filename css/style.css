@@ -7,7 +7,14 @@ body {
 #graphics-credit {
     width: 100%; text-align:center; color:rgba(0, 0, 0, 0.787);
   }
-  
+
+#banner{
+  width: 100%;
+  text-align: center;
+}  
+#banner img {
+  width: 30%
+}
   
 #graphics-credit a:link, #graphics-credit  a:visited {
     color:rgba(0, 0, 0, 0.787);
