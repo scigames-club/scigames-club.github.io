@@ -7,7 +7,7 @@ let GameMap = function(playerOne, playerTwo) {
 
 
   this.obstaclesNumber= 15;
-  this.weaponsNumber= 4;
+  this.weaponsNumber= 8;
 
   //access to the dom to display the game map
   var domGameMap = $('#gameMap');
@@ -34,7 +34,8 @@ let GameMap = function(playerOne, playerTwo) {
   }
 
   //add weapons
-  this.weapons = ['weapon mushroom', 'weapon sword', 'weapon bomb', 'weapon lightning'];
+  this.weapons = ['weapon mushroom', 'weapon sword', 'weapon bomb', 'weapon lightning',
+              'weapon mushroom', 'weapon sword', 'weapon bomb', 'weapon lightning'];
 
   for (var x = 0; x < this.weaponsNumber; x++) {
 
