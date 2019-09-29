@@ -31,16 +31,16 @@ a:hover img.imagedropshadow {
 
 /*-----------------------------------------------------------*/
 
-#graphics-credit a:link, #graphics-credit  a:visited {
+footer a:link, footer  a:visited {
     color:rgba(0, 0, 0, 0.787);
     text-decoration: none;
     cursor: pointer;
 }
 
-#graphics-credit a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
-#graphics-credit a:link:active, a:visited:active {
+footer a:link:active, a:visited:active {
     color:rgba(0, 0, 0, 0.787);
 }
